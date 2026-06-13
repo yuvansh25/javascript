@@ -1,4 +1,5 @@
 //object declaration 
+/*
 //const tinderuser = new Object();//singleton object
 const tinderobject = {};// non singleton object
 tinderobject.id = "123";
@@ -28,5 +29,13 @@ tinderobject.name = "yuvi"
     //accessing entries of an object
     console.log(Object.entries(combinedObject));
  
+*/
 
-
+//object de-structuring
+ const course = {
+    coursename:"javascript",
+    price:"123"
+ }
+ const {price: paise} = course
+// console.log(price);
+console.log(paise);
