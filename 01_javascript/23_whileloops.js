@@ -64,3 +64,4 @@ do {
 // Note: if the array is empty, a do...while body still runs once
 // and accessing elements may return `undefined`. Use a guard
 // (`if (colors.length === 0)`) when that behavior is undesirable.
+// end of while loops 
