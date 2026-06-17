@@ -3,19 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style>
-        .bg-black{
-            background-color: blueviolet;
-            color:#fff;
-        }
-    </style>
+ <style>
+    body{
+        background-color: beige;
+        color: brown;
+    }
+ </style>
 </head>
-<body  class="bg-black">
-    <div>
-        <h1 id="title" class = "heading" >DOM learning with youtube</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, repellendus inventore, sapiente, corporis eum qui nisi dolorum officia nesciunt nam voluptatem ad. Molestias quod ipsa, cumque eaque dolorem saepe consequatur?
-        </p>
+<body  >
+    <div class="parent">
+        <!--   this is a comment      -->
+<div class="day">monday</div>
+<div class="day">tuesday</div>
+<div class="day">wednesday</div>
+<div class="day">thursday</div>
+<div class="day">friday</div>
+<div class="day">saturday</div>
+<div class="day">sunday</div>
     </div>
-    
+   
 </body>
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+ 
+    for (let i=0; i<parent.children.length ; i++) {
+        console.log(parent.children[i].innerHTML);
+         }
+    parent.children[1].style.color = "orange";
+
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+  const dayone =  document.querySelector('.day')
+  console.log(dayone);
+  console.log(dayone.parentElement);
+  console.log(dayone.nextElementSibling);
+  
+  console.log("nodes:",parent.childNodes);
+   
+    </script>
 </html>
